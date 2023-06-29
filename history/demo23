@@ -1,0 +1,21 @@
+type nullableString = string | undefined;
+interface User {
+  username: string;
+  password: string;
+}
+
+let name1: nullableString = "abc";
+
+function addUser(user: User) {
+  return user;
+}
+
+const user = {
+  username: "eric",
+  password: "abcedf",
+  email: "abc@email.com",
+};
+addUser(user);
+
+name1 = undefined;
+console.log(name);
